@@ -1,0 +1,25 @@
+{
+  "name": "game-express",
+  "version": "1.0.0",
+  "description": "<h2>Harry Potter and The Magic Oracle</h2>",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacqohm/Project-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacqohm/Project-1/issues"
+  },
+  "homepage": "https://github.com/jacqohm/Project-1#readme",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0"
+  }
+}

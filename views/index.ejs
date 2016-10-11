@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="utf-8">
+
+    <title>The Magic Oracle</title>
+    <body>
+      <audio id="harry_music" src="audio/harrymusic.mp3" loop="loop"></audio>
+  </head>
+    <div class="welcome_bg_image">
+		<div id="game_logo">
+			<img src="images/project1-logo.png" id="logo"/>
+		</div>
+
+		<div class="welcome_box">
+			<div class="welcome_content"><center>
+          <h1><%= title %>!</h1>
+          All who stand before me now is destined to be a Great Wizard,
+          but great history only allows for one hero and I must make a choice between you two.
+          <br><br>
+          Challenge your friends to a battle of wits answering 10 questions
+          and the winner shall be deemed the Greatest Wizard ever!<br/><br/>
+			  <button id="start_quiz" class="btn-default" type="button">START QUIZ</button></center>
+			  </div>
+		</div>
+
+		<div class="black_bg player_box">
+			<h1>Name yourself before starting the challenge!</h1>
+			<div class="player1_left">
+        <label for="inputsm">Player 1: </label>
+        <input class="form-control input-sm" id="inputsm-p1" type="text">
+			</div>
+			<div class="player2_right">
+        <label for="inputsm">Player 2: </label>
+        <input class="form-control input-sm" id="inputsm-p2" type="text">
+			</div>
+			<div style="clear:both"></div>
+      <br><br>
+        <button id="submitNameBtn" class="btn-default" type="button">SUBMIT</button>
+		</div>
+
+    <div id ="quiz" class="black_bg">
+      <h3 class ="greeting">Hello <span id ="playerName">Player 1</span>, please answer the question!</h3>
+              <div>
+                <h4 class="score1">Score Player 1: <span id="displayScore1">0</span></h4>
+                <h4 class="score2">Score Player 2: <span id="displayScore2">0</span></h4>
+                <h4 class="QnsNum">Question: <span id="displayQnsNum">1</span> of 5</h4>
+              </div>
+              <div>
+                <h2 class id="askQuestion" class="center"></h2>
+                <form id="form">
+                    <div>
+                        <input id="label0" type="radio" name="option" value="">
+                        <label id="answer0" for=""></label>
+                    </div>
+                    <div>
+                        <input id="label1" type="radio" name="option" value="">
+                        <label id="answer1" for=""></label>
+                    </div>
+                    <div>
+                        <input id="label2" type="radio" name="option" value="">
+                        <label id="answer2" for=""></label>
+                    </div>
+                    <div>
+                        <input id="label3" type="radio" name="option" value="">
+                        <label id="answer3" for=""></label>
+                    </div>
+                    <div>
+                    <br>
+                    <button id="submitButton" class="btn-default" type="button">NEXT</button>
+                    </div>
+                </form>
+              </div>
+          <br>
+          <div>
+          <button id="resetBtn" class="btn-default" type="button">RESTART</button>
+        </div>
+    </div>
+
+    <div id ="result_box">
+      <div id="tieMessage">
+        It's a tie!
+        <br>
+        Challenge each other again!
+      </div>
+      <div id ="resultmessage">
+      Congratulations young one! <br>
+      You have proved to be worthy of the wand
+      <br>
+      <span id ="winner"></span> is the Greatest Wizard in the land!
+      <br><br>
+    </div>
+      <div id ="displayBtn">
+      <button id="replayBtn" class="btn-default" type="button">TRY AGAIN</button>
+      </div>
+    </div>
+
+  </body>
+  <script src="script.js" charset="utf-8"></script>
+</html>

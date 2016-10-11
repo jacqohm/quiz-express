@@ -1,0 +1,145 @@
+body {
+  font-family: sans-serif;
+  margin: auto;
+}
+
+h1 {
+    font-family: 'Berkshire Swash', cursive!important;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+p {
+    padding-top: 50px;
+}
+
+.welcome_bg_image {
+background: url('../images/Project1-HP-bg-001.jpg') no-repeat top left;
+background-size:cover;
+}
+
+.welcome_content {
+margin-left: 200px;
+margin-right:200px;
+}
+
+#game_logo {
+width: 380px;
+height: 218px;
+float:right;
+}
+
+#logo img {
+	position: absolute;
+	top: 0px;
+}
+
+.welcome_box {
+clear:both;
+padding-top:50px;
+width:1069px;
+height:500px;
+margin-left:auto;
+margin-right:auto;
+background: url('../images/scrollbg-01.png') no-repeat top left;
+}
+
+.black_bg{
+	clear:both;
+	width:900px;
+	height:500px;
+	margin-left:auto;
+	margin-right:auto;
+	background: url('../images/black-bg-0pa70.png') no-repeat top left;
+	color:#fff;
+}
+
+input#inputsm-p1 {
+    width: 70%;
+    margin-left: 80px;
+}
+
+input#inputsm-p2 {
+    width: 70%;
+    margin-left: 80px;
+}
+
+.welcome_content {
+opacity:1 !important;
+}
+
+.player_box {
+clear:both;
+display:none;
+margin-left:auto;
+margin-right:auto;
+width:950px;
+height:500px;
+text-align:center;
+}
+
+#result_box {
+clear:both;
+display:none;
+padding-top: 100px;
+padding-left: 200px;
+padding-right: 200px;
+width:1069px;
+height:500px;
+margin-left:auto;
+margin-right:auto;
+background: url('../images/scrollbg-01.png') no-repeat top left;
+}
+
+
+.player1_left {
+float:left;
+width:50%;
+}
+
+.player2_right {
+float:right;
+width:50%;
+}
+
+.score2, .score1 {
+    display: inline-block;
+    width: 200px;
+}
+
+#quiz {
+    display: none;
+    padding-right: 60px;
+    padding-left: 72px;
+    padding-top: 21px;
+}
+
+#resultmessage {
+  font-family: 'Berkshire Swash', cursive!important;
+	font-size:25px;
+}
+
+#winner {
+	font-size:42px;
+  color: rgb(255, 255, 255) !important;
+  font-family: 'Berkshire Swash', cursive!important;
+}
+
+#tieMessage {
+  display: none;
+  font-size:36px;
+  font-family: 'Berkshire Swash', cursive!important;
+}
+
+.btn-default:focus, .btn-default:active:focus {
+    outline: 0 none;
+}
+
+.btn-default {
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    background: rgb(33, 33, 33) !important;
+    color: rgb(255, 255, 255) !important;
+}
